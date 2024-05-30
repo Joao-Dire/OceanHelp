@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 html {
     scroll-behavior: smooth;
@@ -84,6 +85,7 @@ button:hover {
 
 h1 {
     font-size: 3.75rem;
+
 }
 
 .texto-esquerda p {
@@ -91,6 +93,7 @@ h1 {
     flex-flow: row nowrap;
     width: 45rem;
     font-size: 1.875rem;
+    font-style: italic;
 }
 
 .texto-esquerda button {
