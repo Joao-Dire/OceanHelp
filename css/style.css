@@ -1,43 +1,47 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .main-content {
-    height: 130px;
+    height: 8.125rem;
     width: 100%;
     background-color: #003366;
     display: flex;
     justify-content: space-between;
-
+    position: fixed;
 }
 
+.espaco-inicial {
+    display: grid;
+    gap: 8.125rem;
+}
 
 .textos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 500px;
+    width: 31.25rem;
     align-items: center;
     list-style: none;
 }
 
 .textos li {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
-
- a {
+a {
     color: #ffff;
     text-decoration: none;
 }
 
 button {
-    width: 200px;
+    width: 12.5rem;
     background-color: #2E8B57;
-    padding: 20px;
-    border-radius: 15px;
-    font-size: 15px;
+    padding: 1.25rem;
+    border-radius: 0.9375rem;
+    font-size: 0.9375rem;
     color: #ffff;
     border: none;
     cursor: pointer;
@@ -54,7 +58,7 @@ button:hover {
 
 #amigo-da-natureza img {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
     display: block;
 }
@@ -63,32 +67,31 @@ button:hover {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .texto-esquerda {
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
     align-items: center;
     justify-content: space-around;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
 }
 
 .texto-esquerda p {
     display: flex;
     flex-flow: row nowrap;
     width: 45rem;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .texto-esquerda button {
     margin-top: 10rem;
-    width: 300px;
+    width: 18.75rem;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -99,7 +102,7 @@ h1 {
 }
 
 .rodape {
-    height: 130px;
+    height: 8.125rem;
     width: 100%;
     background-color: #003366;
     display: flex;
