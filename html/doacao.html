@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../css/doacao.css">
     <title>OceanHelp doação</title>
 </head>
+
 <body>
     <header>
         <nav class="main-content">
@@ -18,12 +20,57 @@
         </nav>
     </header>
     <main>
-        <section class="dados-pessoais" id="dados-pessoais">
-            <h2>Dados Pessoais</h2>
-            <form action=""">
-            <input type="text">
-        </form>
+        <div class="centraliza">
+            <form class="form-cadastro" id="form-cadastro" onsubmit="registrar(event)">
+                <section>
+                    <h1>Dados pessoais</h1>
+                    <section class="section-margin section-dados">
+                        <fieldset id="dadosPessoais">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" placeholder="Ex: João da silva" required>
+                        </fieldset>
+                        <fieldset id="dadosEmail">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Ex: joão@gmail.com"
+                                pattern="^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$" required>
+                        </fieldset>
+                        <fieldset id="dadosCPF">
+                            <label for="cpf">CPF</label>
+                            <input type="text" name="cpf" id="cpf" placeholder="Ex: 123.234.353-12"
+                                pattern="^\d{3}\.\d{3}\.\d{3}-\d{2}$" required>
+                        </fieldset>
+                        <fieldset id="dadosNascimento">
+                            <label for="dataNascimento">Data de nascimento</label>
+                            <input type="text" name="dataNascimento" id="dataNascimento" placeholder="Ex: 01/02/1990"
+                                pattern="^\d{2}/\d{2}/\d{4}$" required>
+                        </fieldset>
+                        <fieldset id="dadosGenero">
+                            <label for="genero">Gênero</label>
+                            <select name="genero" id="genero" required>
+                                <option id="desligado-select" value="" disabled selected>-</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </fieldset>
+                    </section>
+        </div>
+        <div class="centraliza" id="pagamento-centralizado">
+            <section class="metodo-pagamento" id="metodo-pagamento">
+                <h2>Pagamento</h2>
+                <label for="metodo pagamento">Qual o método de pagamento?</label>
+                <select name="" id="escolha-metodo" required>
+                    <option id="desligado-select" value="" disabled selected>-</option>
+                    <option id="Pix" value="">Pix</option>
+                    <option value="cartao-debito">Cartão de débito</option>
+                    <option value="cartao-credito">Cartão de crédito</option>
+                </select>
+                <div class="separa-itens">
+                    <button class="botao-pagamento" id="botao-pagamento">Ir para pagamento</button>
+                </div>
+        </div>
         </section>
     </main>
 </body>
+
 </html>
