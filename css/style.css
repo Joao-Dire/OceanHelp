@@ -3,6 +3,7 @@ body {
     padding: 0;
     height: 100%;
     font-family: 'Roboto', sans-serif;
+
 }
 html {
     scroll-behavior: smooth;
@@ -17,11 +18,14 @@ html {
     position: fixed;
 }
 
+
 .espaco-inicial {
     display: grid;
     gap: 8.125rem;
 }
-
+p {
+    margin-left: 5rem;
+}
 .textos {
     display: flex;
     flex-direction: row;
@@ -50,6 +54,7 @@ button {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 20px;
 }
 
 button:hover {
@@ -73,7 +78,11 @@ button:hover {
     width: 100%;
     height: 100vh;
     padding-top: 2rem;
-    background-color: #DCDCDC
+    background-color: #A9A9A9;
+}
+
+#sobre-nos button {
+    margin-bottom: 3rem;
 }
 
 .texto-esquerda {
@@ -82,6 +91,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin-top: 5rem;   
 }
 
 h1 {
@@ -128,3 +138,4 @@ h1 {
 .email {
     padding-right: 10%;
 }
+

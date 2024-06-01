@@ -1,39 +1,121 @@
 body {
     margin: 0;
-    padding: 0;
-    height: 100%;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    outline: none;
+    background-image: url(../img/Tmnt\ 2012.jpeg);
+}
+
+header {
+    width: 100%;
+    background-color: #003366;
 }
 
 .main-content {
     height: 8.125rem;
     width: 100%;
-    background-color: #003366;
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    align-items: center;
+
 }
 
 .textos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 20rem;
+    width: 20.25rem;
     align-items: center;
     list-style: none;
-    margin-right: 10rem;
+    margin-right: 5rem;
+    height: 3rem;
 }
 
 .textos li {
     font-size: 1.25rem;
 }
 
+
 a {
-    color: #ffff;
+    color: #fff;
     text-decoration: none;
 }
 
+.main-container {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #A9A9A9;
+}
 
-.textos li:hover {
-    transform: scale(1.1);
+.form-dados {
+    background-color: #003366;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    height: 23rem;
+    color: #ffff;
+    border-radius: 40px;
+}
+
+.campo-denuncia {
+    display: flex;
+}
+
+.bloco-denuncia {
+    display: grid;
+    gap: 2rem;
+
+}
+
+.espaco {
+    display: grid;
+    gap: 1rem;
+    margin: 0 5.5rem;
+}
+
+.espaco button {
+    margin: 0 5rem;
+}
+
+input {
+    padding: 0.5rem;
+}
+
+button {
+    width: 12.5rem;
+    background-color: #2E8B57;
+    padding: 1.25rem;
+    border-radius: 0.9375rem;
+    font-size: 0.9375rem;
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #28a745 ;
+}
+
+.rodape {
+    height: 8.125rem;
+    width: 100%;
+    background-color: #003366;
+    display: flex;
+    color: #ffff;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape a {
+    padding-left: 10%;
+}
+
+.email {
+    padding-right: 10%;
 }

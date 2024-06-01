@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/denuncie.css">
-    <title>OceanHelp denuncie ja</title>
+    <title>OceanHelp denuncie já</title>
 </head>
+
 <body>
     <header>
         <nav class="main-content">
-            <div class="logo"><a href="index.html"><img src="../img/OceanHelpLogo.png" alt=""></a></div>
+            <div class="logo"><a href="index.html"><img src="../img/OceanHelpLogo.png" alt="Logo"></a></div>
             <ul class="textos">
                 <li><a href="#sobre-nos">Sobre nós</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
+    <main class="main-container">
+        <form class="form-dados" id="form-dados">
+            <div id="Campo-denuncia" class="campo-denuncia"></div>
+            <h1>O que você deseja denunciar?</h1>
+            <section class="bloco-denuncia">
+                <fieldset id="Dados-denuncia">
+                    <label>Tipo de denúncia</label>
+                    <select required>
+                        <option id="desligado-select" value="" disabled selected >-</option>
+                        <option value="Poluição-de-praias">Poluição de praias/mar</option>
+                        <option value="Maltratos-animais">Maltratos a animais (pesca ilegal, trafico de animais, etc.)</option>
+                        <option value="Animal-vulneravel">Animal em situação vulnerável (Resgate)</option>
+                        <option value="">Outros</option>
+                    </select>
+                </fieldset>
+                <div class="espaco">
+                    <h1>Descreva sua denuncia</h1>
+                    <input type="text" placeholder="Encontrei lixo jogado!">
+                    <button id="enviar-denuncia" class="enviar-denuncia">Enviar denuncia</button>
+                </div>
+            </section>
+        </form>
+    </main>
+    <footer class="rodape" id="contato">
+        <a href="#" type="tel" class="telefone"> <img src="../img/whatsapp-icon.png" alt="logo whatsapp">(11)1234-5678</a>
+        <p class="instagram"> <img src="../img/instagram-icon.png" alt="logo instagram">Help_ocean</p>
+        <p class="email"> <img src="../img/gmail-icon.png" alt="logo gmail">helpocean@gmail.com</p>
+    </footer>
 </body>
+
+
 </html>
