@@ -44,24 +44,28 @@ a {
 }
 
 .main-container {
-    flex: 1; 
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #E0F7FA ;
+    background-color: #E0F7FA;
 }
 
 .form-dados {
     background-color: #003366;
     padding: 20px;
+    margin-bottom: 2rem;
     border-radius: 8px;
     text-align: center;
-    height: 23rem;
+    height: auto;
     color: #ffff;
     border-radius: 40px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+h1 {
+    font-size: medium;
+}
 
 .campo-denuncia {
     display: grid;
@@ -96,7 +100,7 @@ button {
 }
 
 button:hover {
-    background-color: #28a745 ;
+    background-color: #28a745;
 }
 
 .rodape {
