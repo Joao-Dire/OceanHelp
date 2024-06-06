@@ -33,7 +33,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 31.25rem;
+    width: 40.25rem;
     align-items: center;
     list-style: none;
 }
@@ -51,6 +51,7 @@ button {
     width: 12.5rem;
     background-color: #2E8B57;
     padding: 1.25rem;
+    margin-right: 1.5rem;
     box-sizing: border-box;
     border-radius: 0.9375rem;
     font-size: 0.9375rem;
@@ -146,12 +147,16 @@ h1 {
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
-    .textos {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 7rem;
-        position: absolute; 
+    .main-content {
+        width: 100%;
     }
+    .textos {
+        width: auto;
+        align-items: flex-start;
+        margin-right: 5rem;
+
+        gap: 2rem;
+    }   
 
     .textos li {
         font-size: 1rem;
@@ -216,6 +221,7 @@ h1 {
         flex-direction: column;
         height: auto;
         padding: 1rem;
+        align-items: baseline;
     }
 
     .rodape a, .email {
@@ -230,7 +236,8 @@ h1 {
     button {
         width: 100%;
         padding: 1rem;
-        margin-bottom: 1.5rem;
+        margin: 0 1rem 1.5rem 0;
+    
     }
 
     h1 {
