@@ -16,13 +16,18 @@ html {
     background-color: #003366;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
     position: fixed;
+    top: 0;
     z-index: 10;
+    box-sizing: border-box;
 }
 
 .espaco-inicial {
     display: grid;
     gap: 8.125rem;
+    margin-top: 8.125rem;
 }
 
 p {
@@ -33,17 +38,17 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 40.25rem;
     align-items: center;
     list-style: none;
 }
 
 .textos li {
     font-size: 1.25rem;
+    margin-right: 1.5rem;
 }
 
 a {
-    color: #ffff;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -51,11 +56,10 @@ button {
     width: 12.5rem;
     background-color: #2E8B57;
     padding: 1.25rem;
-    margin-right: 1.5rem;
     box-sizing: border-box;
     border-radius: 0.9375rem;
     font-size: 0.9375rem;
-    color: #ffff;
+    color: #fff;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -72,10 +76,12 @@ button:hover {
 
 #amigo-da-natureza img {
     width: 100%;
-    height: 100vh;
+    max-height: 80vh;
+    max-width: 100%;
     object-fit: cover;
     display: block;
 }
+
 
 #sobre-nos {
     display: flex;
@@ -130,9 +136,11 @@ h1 {
     width: 100%;
     background-color: #003366;
     display: flex;
-    color: #ffff;
+    color: #fff;
     justify-content: space-between;
     align-items: center;
+    padding: 0 2rem;
+    box-sizing: border-box;
 }
 
 .rodape a {
@@ -145,54 +153,44 @@ h1 {
     box-sizing: border-box;
 }
 
-/* Media Queries for Mobile */
 @media (max-width: 768px) {
     .main-content {
-        width: 100%;
-    }
-    .textos {
-        width: auto;
+        flex-direction: column;
         align-items: flex-start;
-        margin-right: 5rem;
-
-        gap: 2rem;
-    }   
-
-    .textos li {
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
-    }
-
-
-    .form-cadastro {
-        width: 95%;
-        padding: 1rem;
-    }
-
-    .section-margin {
-        margin: 0 1rem;
-    }
-
-    .metodo-pagamento {
-        width: 90%;
         height: auto;
         padding: 1rem;
     }
 
-    h2 {
-        margin-left: 0;
-        text-align: center;
+    .textos {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
-    .pix-code {
-        width: 95%;
-        padding: 1rem;
+    .textos li {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .denuncie-ja {
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    p {
+        margin-left: 1rem;
     }
 
     #sobre-nos {
         flex-direction: column;
         padding-top: 1rem;
         height: auto;
+    }
+    
+    #amigo-da-natureza {
+        margin-top: 6rem;
     }
 
     .texto-esquerda {
@@ -224,20 +222,15 @@ h1 {
         align-items: baseline;
     }
 
-    .rodape a, .email {
+    .rodape a,
+    .rodape p {
         padding: 0;
-    }
-
-    p {
-        margin-left: 1rem;
-        margin-right: 1rem;
     }
 
     button {
         width: 100%;
         padding: 1rem;
         margin: 0 1rem 1.5rem 0;
-    
     }
 
     h1 {

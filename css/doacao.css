@@ -111,6 +111,7 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 20px;
+    padding: 2;
 }
 
 button:hover {
@@ -150,6 +151,10 @@ button:hover {
     .pix-code {
         width: 95%;
         padding: 1rem;
+    }
+    
+    button {
+        padding: 20px;
     }
 }
 
