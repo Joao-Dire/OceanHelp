@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -16,18 +17,13 @@ html {
     background-color: #003366;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
     position: fixed;
-    top: 0;
     z-index: 10;
-    box-sizing: border-box;
 }
 
 .espaco-inicial {
     display: grid;
     gap: 8.125rem;
-    margin-top: 8.125rem;
 }
 
 p {
@@ -38,17 +34,17 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 40.25rem;
     align-items: center;
     list-style: none;
 }
 
 .textos li {
     font-size: 1.25rem;
-    margin-right: 1.5rem;
 }
 
 a {
-    color: #fff;
+    color: #ffff;
     text-decoration: none;
 }
 
@@ -56,10 +52,11 @@ button {
     width: 12.5rem;
     background-color: #2E8B57;
     padding: 1.25rem;
+    margin-right: 1.5rem;
     box-sizing: border-box;
     border-radius: 0.9375rem;
     font-size: 0.9375rem;
-    color: #fff;
+    color: #ffff;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -76,12 +73,9 @@ button:hover {
 
 #amigo-da-natureza img {
     width: 100%;
-    max-height: 80vh;
-    max-width: 100%;
     object-fit: cover;
     display: block;
 }
-
 
 #sobre-nos {
     display: flex;
@@ -136,11 +130,9 @@ h1 {
     width: 100%;
     background-color: #003366;
     display: flex;
-    color: #fff;
+    color: #ffff;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
-    box-sizing: border-box;
 }
 
 .rodape a {
@@ -189,8 +181,13 @@ h1 {
         height: auto;
     }
     
-    #amigo-da-natureza {
-        margin-top: 6rem;
+    #amigo-da-natureza img {
+        margin-top: 13.5rem;
+        width: 100%;
+        max-height: 80vh;
+        max-width: 100%;
+        object-fit: cover;
+        display: block;
     }
 
     .texto-esquerda {
